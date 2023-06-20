@@ -1,14 +1,22 @@
+import  'react-native-gesture-handler'
 import React from 'react';
-import { View, Text } from 'react-native';
 import Navigation from './src/navigation/Navigation';
-import { Provider } from 'react-redux'
-import { store } from './src/redux/store/store';
+import { StatusBar  } from 'react-native'
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function componentName() {
+
   return (
-     <Provider store={store}>
-       <Navigation />
-     </Provider>
+    <>
+       <StatusBar
+        barStyle="dark-content" 
+        backgroundColor="transparent"
+        translucent={true}
+      />
+      <Navigation />
     
+
+
+    </>
   );
 }

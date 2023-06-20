@@ -20,7 +20,7 @@ const HostingOutsidee_Navigation = () => {
     const HostingOutsidee = createNativeStackNavigator();
 
     return (
-        <HostingOutsidee.Navigator>
+        <HostingOutsidee.Navigator screenOptions={{ headerShown:false }}>
             <HostingOutsidee.Screen name="EventHomeScreen" component={EventHomeScreen} />
             <HostingOutsidee.Screen name="EventPostScreen" component={EventPostScreen} />
             <HostingOutsidee.Screen name="EventDetailScreen" component={EventDetailScreen} />

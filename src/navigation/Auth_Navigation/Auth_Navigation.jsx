@@ -16,7 +16,7 @@ const Auth_Navigation = () => {
     const AuthStack = createNativeStackNavigator();
 
     return (
-        <AuthStack.Navigator>
+        <AuthStack.Navigator screenOptions={{ headerShown:false }}>
             <AuthStack.Screen name="SplashScreen" component={SplashScreen} />
             <AuthStack.Screen name="PreloginScreen" component={PreloginScreen} />
             <AuthStack.Screen name="SigninScreen" component={SigninScreen} />

@@ -14,6 +14,22 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-Outsideee-OutsideeeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-Outsideee-OutsideeeTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		09B7DFB2CC4E4022ACD5DFF0 /* NexaBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECEA876120BE474C93BDB737 /* NexaBlack.ttf */; };
+		9CEF261B56DF47208B3D956F /* NexaBlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8F100DF7F4147E38F2203EF /* NexaBlackItalic.ttf */; };
+		9D60958A31034ED884233B68 /* NexaBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F082D4AD87749D6B3D27A70 /* NexaBold.ttf */; };
+		3E38759956A1452784577F9E /* NexaBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9D351022AA83498DAB99504F /* NexaBoldItalic.ttf */; };
+		C1A61C9CDFBA48BBBED79B9D /* NexaBook.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 855B5304F46D4950B8CD2B14 /* NexaBook.ttf */; };
+		31F5D739F057426CB2A3FF69 /* NexaBookItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7016B41C4D6D41768F66007D /* NexaBookItalic.ttf */; };
+		A16EDAB957B24DD9BB01EC11 /* NexaHeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D94C403C725A4A5CB678D62C /* NexaHeavyItalic.ttf */; };
+		5AF3D7419D03497F9F92A858 /* NexaLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B1270ECBD0B40E69760489B /* NexaLight.ttf */; };
+		E8DBA421822948C8BBBC8D62 /* NexaLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03A678DB1F4E49BFB8792D19 /* NexaLightItalic.ttf */; };
+		0F648930A0B34122BF07606D /* NexaRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E291AABAF4648109E4945DF /* NexaRegular.ttf */; };
+		685BBC9805B34AE49E178293 /* NexaRegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F3EB90DA7DA40A1B47BF313 /* NexaRegularItalic.ttf */; };
+		F3581764E30C4C1EB114B3B0 /* NexaThin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C598FC9A12FF4457AC0A259D /* NexaThin.ttf */; };
+		4FA07AE9492D47AAAB8B1256 /* NexaXBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33FD191A474F4518A6FBBC54 /* NexaXBold.ttf */; };
+		8659BBC0020E4DBABA095BEA /* NexaXBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6EDDC01D671C4D0C8E6D728B /* NexaXBoldItalic.ttf */; };
+		6425AEBA1FE34DF1BF3A98BF /* fonts.js in Resources */ = {isa = PBXBuildFile; fileRef = F6ADE08BF4E9475CAC3DEBA1 /* fonts.js */; };
+		58EFFDA2A9A44012AB31EA4B /* SEGOEUI.TTF in Resources */ = {isa = PBXBuildFile; fileRef = C082FC858C5F49159C73FB24 /* SEGOEUI.TTF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +60,22 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Outsideee/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-Outsideee-OutsideeeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Outsideee-OutsideeeTests.release.xcconfig"; path = "Target Support Files/Pods-Outsideee-OutsideeeTests/Pods-Outsideee-OutsideeeTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		ECEA876120BE474C93BDB737 /* NexaBlack.ttf */ = {isa = PBXFileReference; name = "NexaBlack.ttf"; path = "../src/assets/fonts/NexaBlack.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B8F100DF7F4147E38F2203EF /* NexaBlackItalic.ttf */ = {isa = PBXFileReference; name = "NexaBlackItalic.ttf"; path = "../src/assets/fonts/NexaBlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0F082D4AD87749D6B3D27A70 /* NexaBold.ttf */ = {isa = PBXFileReference; name = "NexaBold.ttf"; path = "../src/assets/fonts/NexaBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9D351022AA83498DAB99504F /* NexaBoldItalic.ttf */ = {isa = PBXFileReference; name = "NexaBoldItalic.ttf"; path = "../src/assets/fonts/NexaBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		855B5304F46D4950B8CD2B14 /* NexaBook.ttf */ = {isa = PBXFileReference; name = "NexaBook.ttf"; path = "../src/assets/fonts/NexaBook.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7016B41C4D6D41768F66007D /* NexaBookItalic.ttf */ = {isa = PBXFileReference; name = "NexaBookItalic.ttf"; path = "../src/assets/fonts/NexaBookItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D94C403C725A4A5CB678D62C /* NexaHeavyItalic.ttf */ = {isa = PBXFileReference; name = "NexaHeavyItalic.ttf"; path = "../src/assets/fonts/NexaHeavyItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7B1270ECBD0B40E69760489B /* NexaLight.ttf */ = {isa = PBXFileReference; name = "NexaLight.ttf"; path = "../src/assets/fonts/NexaLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		03A678DB1F4E49BFB8792D19 /* NexaLightItalic.ttf */ = {isa = PBXFileReference; name = "NexaLightItalic.ttf"; path = "../src/assets/fonts/NexaLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0E291AABAF4648109E4945DF /* NexaRegular.ttf */ = {isa = PBXFileReference; name = "NexaRegular.ttf"; path = "../src/assets/fonts/NexaRegular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3F3EB90DA7DA40A1B47BF313 /* NexaRegularItalic.ttf */ = {isa = PBXFileReference; name = "NexaRegularItalic.ttf"; path = "../src/assets/fonts/NexaRegularItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C598FC9A12FF4457AC0A259D /* NexaThin.ttf */ = {isa = PBXFileReference; name = "NexaThin.ttf"; path = "../src/assets/fonts/NexaThin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		33FD191A474F4518A6FBBC54 /* NexaXBold.ttf */ = {isa = PBXFileReference; name = "NexaXBold.ttf"; path = "../src/assets/fonts/NexaXBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6EDDC01D671C4D0C8E6D728B /* NexaXBoldItalic.ttf */ = {isa = PBXFileReference; name = "NexaXBoldItalic.ttf"; path = "../src/assets/fonts/NexaXBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F6ADE08BF4E9475CAC3DEBA1 /* fonts.js */ = {isa = PBXFileReference; name = "fonts.js"; path = "../src/assets/fonts/fonts.js"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C082FC858C5F49159C73FB24 /* SEGOEUI.TTF */ = {isa = PBXFileReference; name = "SEGOEUI.TTF"; path = "../src/assets/fonts/SEGOEUI.TTF"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +154,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				2A9A83A0C6174D1DBB40E0DA /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +180,30 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		2A9A83A0C6174D1DBB40E0DA /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				ECEA876120BE474C93BDB737 /* NexaBlack.ttf */,
+				B8F100DF7F4147E38F2203EF /* NexaBlackItalic.ttf */,
+				0F082D4AD87749D6B3D27A70 /* NexaBold.ttf */,
+				9D351022AA83498DAB99504F /* NexaBoldItalic.ttf */,
+				855B5304F46D4950B8CD2B14 /* NexaBook.ttf */,
+				7016B41C4D6D41768F66007D /* NexaBookItalic.ttf */,
+				D94C403C725A4A5CB678D62C /* NexaHeavyItalic.ttf */,
+				7B1270ECBD0B40E69760489B /* NexaLight.ttf */,
+				03A678DB1F4E49BFB8792D19 /* NexaLightItalic.ttf */,
+				0E291AABAF4648109E4945DF /* NexaRegular.ttf */,
+				3F3EB90DA7DA40A1B47BF313 /* NexaRegularItalic.ttf */,
+				C598FC9A12FF4457AC0A259D /* NexaThin.ttf */,
+				33FD191A474F4518A6FBBC54 /* NexaXBold.ttf */,
+				6EDDC01D671C4D0C8E6D728B /* NexaXBoldItalic.ttf */,
+				F6ADE08BF4E9475CAC3DEBA1 /* fonts.js */,
+				C082FC858C5F49159C73FB24 /* SEGOEUI.TTF */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -244,6 +301,22 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				09B7DFB2CC4E4022ACD5DFF0 /* NexaBlack.ttf in Resources */,
+				9CEF261B56DF47208B3D956F /* NexaBlackItalic.ttf in Resources */,
+				9D60958A31034ED884233B68 /* NexaBold.ttf in Resources */,
+				3E38759956A1452784577F9E /* NexaBoldItalic.ttf in Resources */,
+				C1A61C9CDFBA48BBBED79B9D /* NexaBook.ttf in Resources */,
+				31F5D739F057426CB2A3FF69 /* NexaBookItalic.ttf in Resources */,
+				A16EDAB957B24DD9BB01EC11 /* NexaHeavyItalic.ttf in Resources */,
+				5AF3D7419D03497F9F92A858 /* NexaLight.ttf in Resources */,
+				E8DBA421822948C8BBBC8D62 /* NexaLightItalic.ttf in Resources */,
+				0F648930A0B34122BF07606D /* NexaRegular.ttf in Resources */,
+				685BBC9805B34AE49E178293 /* NexaRegularItalic.ttf in Resources */,
+				F3581764E30C4C1EB114B3B0 /* NexaThin.ttf in Resources */,
+				4FA07AE9492D47AAAB8B1256 /* NexaXBold.ttf in Resources */,
+				8659BBC0020E4DBABA095BEA /* NexaXBoldItalic.ttf in Resources */,
+				6425AEBA1FE34DF1BF3A98BF /* fonts.js in Resources */,
+				58EFFDA2A9A44012AB31EA4B /* SEGOEUI.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

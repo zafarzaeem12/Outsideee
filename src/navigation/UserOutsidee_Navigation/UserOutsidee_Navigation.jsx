@@ -10,18 +10,18 @@ import SettingScreen from '../../screens/UserOutsidee/SettingScreen/SettingScree
 import UserScreen from '../../screens/UserOutsidee/UserScreen/UserScreen';
 import ChatScreen from '../../screens/UserOutsidee/Chat/ChatScreen/ChatScreen';
 import ChatlistScreen from '../../screens/UserOutsidee/Chat/ChatlistScreen/ChatlistScreen';
-
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 const UserOutsidee_Navigation = () => {
 
     const UserOutsidee = createNativeStackNavigator();
 
 
     return (
-        <UserOutsidee.Navigator>
+        <UserOutsidee.Navigator screenOptions={{ headerShown:false }}>
+            <UserOutsidee.Screen name="HomeScreen" component={HomeScreen} />
             <UserOutsidee.Screen name="EventsScreen" component={EventsScreen} />
             <UserOutsidee.Screen name="FeaturedScreen" component={FeaturedScreen} />
             <UserOutsidee.Screen name="HelpScreen" component={HelpScreen} />
-            <UserOutsidee.Screen name="HomeScreen" component={HomeScreen} />
             <UserOutsidee.Screen name="PoliciesScreen" component={PoliciesScreen} />
             <UserOutsidee.Screen name="RatingScreen" component={RatingScreen} />
             <UserOutsidee.Screen name="SettingScreen" component={SettingScreen} />
