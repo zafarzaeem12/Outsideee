@@ -169,10 +169,11 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     fontWeight: theme.font.light,
-    fontSize: 16,
     color: theme.color.white,
     position: 'absolute',
     left: width / 4,
+    fontSize: 15,
+    fontFamily: theme?.font?.regular
   },
   textContainer: {
     width: '80%',

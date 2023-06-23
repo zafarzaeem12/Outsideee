@@ -62,7 +62,8 @@ const SigninScreen = ({ navigation }) => {
                 fontSize: theme.fontSize.regular,
                 color: theme.color.black,
                 textDecorationLine: 'underline',
-                fontWeight: theme.font.italic
+                fontSize: 15,
+                fontFamily: theme?.font?.regular
               }}>
                 Forgot Password?
               </Text>
@@ -115,6 +116,8 @@ const styles = StyleSheet.create({
   btn: {
     paddingHorizontal:50,
     marginTop: '10%',
+    fontSize: 15,
+    fontFamily: theme?.font?.regular
   },
   btm: {
     marginTop: 10,
@@ -124,6 +127,7 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: theme.font.light,
     color: theme.color.white,
+    fontFamily: theme?.font?.regular
   },
   heading: {
     fontWeight: theme.font.light,

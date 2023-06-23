@@ -14,12 +14,12 @@ const SplashScreen = ({ navigation }) => {
   useEffect(() => {
     // Trigger animation on component mount
     logoOpacity.value = withTiming(1, {
-      duration: 5000, // Animation duration
+      duration: 9000, // Animation duration
       easing: Easing.ease, // Easing function (optional)
     });
     const timeout = setTimeout(() => {
       navigation.navigate('PreloginScreen'); // Replace 'LoginScreen' with the actual name of your login screen component
-    }, 5000);
+    }, 9000);
 
     // Clean up the timeout on component unmount
     return () => clearTimeout(timeout);

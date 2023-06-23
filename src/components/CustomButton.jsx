@@ -35,7 +35,7 @@ export default function CustomButton(props) {
       >
         <Text style={[{
           fontSize: theme?.fontSize?.medium,
-          fontFamily: 'bold', color:'#fff', textTransform: 'capitalize',
+          fontFamily: theme?.font?.regular, color:'#fff', textTransform: 'capitalize',
         }, textStyle]}>
           {title}
         </Text>

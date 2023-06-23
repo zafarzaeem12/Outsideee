@@ -11,6 +11,7 @@ import EventEditProfileScreen from '../../screens/HostingOutsidee/EventEditProfi
 import EventHelpScreen from '../../screens/HostingOutsidee/EventHelpScreen/EventHelpScreen';
 import ChatlistScreen from '../../screens/HostingOutsidee/EventChatScreen/ChatlistScreen/ChatlistScreen';
 import EventChatScreen from '../../screens/HostingOutsidee/EventChatScreen/EventChatScreen/EventChatScreen';
+import HostingOutsidee_BottomTab_Navigation from '../BottomTab_Navigation/HostingOutsidee_BottomTab_Navigation';
 
 
 
@@ -21,6 +22,8 @@ const HostingOutsidee_Navigation = () => {
 
     return (
         <HostingOutsidee.Navigator screenOptions={{ headerShown:false }}>
+            
+            <HostingOutsidee.Screen name="HostingOutsidee_BottomTab_Navigation" component={HostingOutsidee_BottomTab_Navigation} />
             <HostingOutsidee.Screen name="EventHomeScreen" component={EventHomeScreen} />
             <HostingOutsidee.Screen name="EventPostScreen" component={EventPostScreen} />
             <HostingOutsidee.Screen name="EventDetailScreen" component={EventDetailScreen} />

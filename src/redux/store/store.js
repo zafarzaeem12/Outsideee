@@ -1,12 +1,19 @@
 import { configureStore ,combineReducers } from '@reduxjs/toolkit'
-import {  persistReducer ,persistStore } from 'redux-persist';
 import ChatReducer from '../reducers/ChatReducer'
 import EventReducer from '../reducers/EventReducer'
 import HomeReducer from '../reducers/HomeReducer'
 import RatingReducer from '../reducers/RatingReducer'
 import UserReducer from '../reducers/UserReducer'
-import storage from 'redux-persist/lib/storage'
-
+import {  
+  persistReducer,
+  FLUSH,
+  REHYDRATE,
+  PAUSE,
+  PERSIST,
+  PURGE,
+  REGISTER,
+} from 'redux-persist';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Rootreducers = combineReducers({
     chats: ChatReducer,
@@ -16,19 +23,25 @@ const Rootreducers = combineReducers({
     users: UserReducer            
  });
 
-const persistConfig = {
+const persistConfig  = {
     key: 'root',
-    storage ,
-    whitelist: ['chats', 'events', 'home', 'reviews', 'users'] // Specify the reducers you want to persist
+    version: 1,
+    storage : AsyncStorage
   };
 
   const persistedReducer = persistReducer(persistConfig, Rootreducers);
 
   
 
-export const store = configureStore({
-    reducer: persistedReducer
-})
+  const store = configureStore({
+    reducer: persistedReducer,
+    middleware: (getDefaultMiddleware) =>
+      getDefaultMiddleware({
+        serializableCheck: {
+          ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+        },
+      }),
+  })
 
- export const persistor = persistStore(store)
+export default store;
 

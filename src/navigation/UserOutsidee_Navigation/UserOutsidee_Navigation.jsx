@@ -10,6 +10,7 @@ import SettingScreen from '../../screens/UserOutsidee/SettingScreen/SettingScree
 import UserScreen from '../../screens/UserOutsidee/UserScreen/UserScreen';
 import ChatScreen from '../../screens/UserOutsidee/Chat/ChatScreen/ChatScreen';
 import ChatlistScreen from '../../screens/UserOutsidee/Chat/ChatlistScreen/ChatlistScreen';
+import UserOutsidee_BottomTab_Navigation from '../BottomTab_Navigation/UserOutsidee_BottomTab_Navigation';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 const UserOutsidee_Navigation = () => {
 
@@ -18,6 +19,7 @@ const UserOutsidee_Navigation = () => {
 
     return (
         <UserOutsidee.Navigator screenOptions={{ headerShown:false }}>
+            <UserOutsidee.Screen name="UserOutsidee_BottomTab_Navigation" component={UserOutsidee_BottomTab_Navigation} />
             <UserOutsidee.Screen name="HomeScreen" component={HomeScreen} />
             <UserOutsidee.Screen name="EventsScreen" component={EventsScreen} />
             <UserOutsidee.Screen name="FeaturedScreen" component={FeaturedScreen} />

@@ -85,7 +85,8 @@ const styles = StyleSheet.create({
   titleText: {
     color: theme.color.white,
     fontWeight: theme.font.light,
-    fontSize: theme.fontSize.headingSize,
+    fontSize: 18,
+    fontFamily: theme?.font?.regular
   },
   profileButton: {
     position: 'absolute',

@@ -37,7 +37,7 @@ const HomeScreen = ({ navigation }) => {
       <ScrollView showsVerticalScrollIndicator={false} >
           <View style={{ flexDirection: 'row', }}>
             <View style={{ flex: 1 }}>
-              <Text style={{ fontSize: theme.fontSize.large, color: theme.color.black, alignSelf: 'center' }}>Home</Text>
+              <Text style={{fontSize:18 , color: theme.color.black, alignSelf: 'center' ,fontFamily: theme.font.bold }}>Home</Text>
             </View>
 
             <View style={{ justifyContent: 'flex-end' }}>
@@ -45,7 +45,7 @@ const HomeScreen = ({ navigation }) => {
             </View>
           </View>
           <View>
-            <Text style={{ fontSize: theme.fontSize.large, fontFamily: theme.font.regular }}>Featured</Text>
+            <Text style={{ left:18 , fontSize: theme.fontSize.large, fontFamily: theme.font.regular }}>Featured</Text>
               <FlatList
                 data={data}
                 keyExtractor={(item) => item.id.toString()}
