@@ -14,12 +14,12 @@ const SplashScreen = ({ navigation }) => {
   useEffect(() => {
     // Trigger animation on component mount
     logoOpacity.value = withTiming(1, {
-      duration: 9000, // Animation duration
+      duration: 5000, // Animation duration
       easing: Easing.ease, // Easing function (optional)
     });
     const timeout = setTimeout(() => {
       navigation.navigate('PreloginScreen'); // Replace 'LoginScreen' with the actual name of your login screen component
-    }, 9000);
+    }, 5000);
 
     // Clean up the timeout on component unmount
     return () => clearTimeout(timeout);
@@ -40,12 +40,18 @@ const SplashScreen = ({ navigation }) => {
           source={require('../../../assets/Images/splashlogo.png')}
           style={styles.logo}
         />
+        <LottieView
+          source={require('../../../assets/animations/70719-blue-spinner-2.json')}
+          autoPlay
+          loop
+          style={{ width: 600, height: 600, position:'absolute',}}
+        />
       </Animated.View>
     </AuthBackground>
   )
 }
 
-export default SplashScreen
+export default React.memo(SplashScreen)
 
 const styles = StyleSheet.create({
 
@@ -53,14 +59,18 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    position:'relative',
+    marginTop:-50
   },
   logoContainer: {
     opacity: 1, // Initial opacity is set to 0
   },
   logo: {
-    width: 230,
-    height: 180,
+    width: 130,
+    height: 130,
     resizeMode: 'contain',
+    position:'absolute',
+    bottom:"43%"
 
   },
 })

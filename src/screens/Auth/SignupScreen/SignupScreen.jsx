@@ -8,7 +8,7 @@ import Icons from '../../../assets/Icons';
 import CustomButton from '../../../components/CustomButton';
 import { theme } from '../../../assets/fonts/fonts';
 
-const SigninScreen = ({ navigation }) => {
+const SignupScreen = ({ navigation }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [visible, setVisible] = useState(false);
@@ -94,7 +94,7 @@ const SigninScreen = ({ navigation }) => {
   );
 };
 
-export default React.memo(SigninScreen);
+export default React.memo(SignupScreen);
 
 const styles = StyleSheet.create({
   maincontainer: {
@@ -129,11 +129,11 @@ const styles = StyleSheet.create({
   },
   btmtxt: {
     fontSize: 15,
-    fontWeight: '400',
+    fontFamily: '400',
     color: theme.color.white,
   },
   heading: {
-    fontWeight: theme.font.black,
+    fontFamily: theme.font.black,
     color: theme.color.white,
     fontSize: 15,
     textDecorationLine: 'underline',

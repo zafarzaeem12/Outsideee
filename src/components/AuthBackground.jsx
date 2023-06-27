@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
   },
   titleText: {
     color: theme.color.white,
-    fontWeight: theme.font.light,
+    fontFamily: theme.font.light,
     fontSize: 18,
     fontFamily: theme?.font?.regular
   },

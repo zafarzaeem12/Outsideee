@@ -4,13 +4,13 @@ import RNBounceable from "@freakycoder/react-native-bounceable";
 import { theme } from '../../../assets/fonts/fonts';
 import Icons from '../../../assets/Icons';
 import AuthBackground from '../../../components/AuthBackground';
-
+//import Animated, { FadeIn, FadeOut } from    'react-native-reanimated';
 const { width, height } = Dimensions.get('window');
 
 const PreloginScreen = ({ navigation }) => {
   const [showModal, setShowModal] = useState(false);
   const [currentOption, setCurrentOption] = useState('');
-  const fadeInAnimation = useRef(new Animated.Value(0)).current;
+  const fadeInAnimation = useRef(new Animated.Value(15)).current;
 
   useEffect(() => {
     animateButtons();
@@ -168,7 +168,7 @@ const styles = StyleSheet.create({
     left: width / 8,
   },
   buttonText: {
-    fontWeight: theme.font.light,
+    fontFamily: theme.font.light,
     color: theme.color.white,
     position: 'absolute',
     left: width / 4,
@@ -184,7 +184,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   linkText: {
-    fontWeight: theme.font.light,
+    fontFamily: theme.font.light,
     textDecorationLine: 'underline',
   },
   logo: {

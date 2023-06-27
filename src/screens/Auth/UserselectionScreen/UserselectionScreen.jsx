@@ -59,7 +59,7 @@ const UserselectionScreen = () => {
   )
 }
 
-export default UserselectionScreen
+export default React.memo(UserselectionScreen)
 
 const styles = StyleSheet.create({
   cardContainer: {

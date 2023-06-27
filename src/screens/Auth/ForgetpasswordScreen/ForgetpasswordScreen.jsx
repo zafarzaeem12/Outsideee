@@ -87,11 +87,11 @@ const styles = StyleSheet.create({
   },
   btmtxt: {
     fontSize: 15,
-    fontWeight: theme.font.light,
+    fontFamily: theme.font.light,
     color: theme.color.white,
   },
   heading: {
-    fontWeight: theme.font.light,
+    fontFamily: theme.font.light,
     color: theme.color.white,
     fontSize: 15,
     textDecorationLine: 'underline',

@@ -6,6 +6,7 @@ import Icons from '../../../assets/Icons'
 import { Avatar } from '@rneui/themed';
 
 import Swiper from 'react-native-swiper';
+import NewData from '../../../components/NewData'
 
 const { width } = Dimensions.get('window');
 
@@ -53,7 +54,7 @@ const RatingScreen = ({ navigation }) => {
   return (
     <AppBackground>
       <ScrollView showsVerticalScrollIndicator={false} >
-        <View style={{ flexDirection: 'row', }}>
+        <View style={{ flexDirection: 'row',flex:1 }}>
           <View style={{ flex: 1 }}>
             <Text style={{ fontSize: 20, color: theme.color.black, alignSelf: 'center', fontFamily: theme.font.bold }}>Events</Text>
           </View>
@@ -121,6 +122,8 @@ const RatingScreen = ({ navigation }) => {
             <Text style={{ marginLeft: 5, marginTop: 10, fontSize: 18, color: theme.color.black, alignSelf: 'flex-start', fontFamily: theme.font.bold }}>Rating & Posts</Text>
           </View>
           <View style={{ borderTopWidth: 1, borderTopColor: 'silver', marginTop: 10 }} />
+
+          <NewData />
         </View>
       </ScrollView>
     </AppBackground>
@@ -181,7 +184,7 @@ const styles = StyleSheet.create({
   text: {
     color: '#fff',
     fontSize: 30,
-    fontWeight: 'bold'
+    fontFamily: 'bold'
   },
   image: {
     flex: 1,

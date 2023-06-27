@@ -125,7 +125,7 @@ const OTP = ({ route , navigation }) => {
             onPress={resend ? handleResend : null}
             style={{
               color: '#fff',
-              fontWeight: resend ? '600' : '300',
+              fontFamily: resend ? '600' : '300',
               alignSelf: 'center',
               fontSize: 14,
               position: 'absolute',
@@ -135,7 +135,7 @@ const OTP = ({ route , navigation }) => {
             <Text
               style={{
                 fontSize: 16,
-                fontWeight: '500',
+                fontFamily: '500',
               }}>
               Resend
             </Text>
@@ -146,7 +146,7 @@ const OTP = ({ route , navigation }) => {
   );
 };
 
-export default OTP;
+export default React.memo(OTP);
 
 const styles = StyleSheet.create({
 
