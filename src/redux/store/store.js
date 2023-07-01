@@ -4,6 +4,9 @@ import EventReducer from '../reducers/EventReducer'
 import HomeReducer from '../reducers/HomeReducer'
 import RatingReducer from '../reducers/RatingReducer'
 import UserReducer from '../reducers/UserReducer'
+
+import { UserReducers } from '../reducers/UserReducer'
+
 import {  
   persistReducer,
   FLUSH,
@@ -20,7 +23,7 @@ const Rootreducers = combineReducers({
     events: EventReducer,
     home: HomeReducer,
     reviews: RatingReducer,
-    users: UserReducer            
+    users: UserReducers            
  });
 
 const persistConfig  = {

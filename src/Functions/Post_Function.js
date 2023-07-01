@@ -1,14 +1,20 @@
 import axios from 'axios';
 
-export const Post_Function = (url, payload) => {
-    const url = `${url}`;
-    const payload = payload;
+export const Post_Function = async (url, payload) => {
+   try {
     const config = {
-        header: {
-            'Content-Type': 'multipart/form-data'
-        }
+        method: 'post',
+        url: url,
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        data: payload
+
+
     }
-    const data = axios.post(url, payload, config);
-    const response = data?.data;
-    return response;
+    const newUser = await axios(config)
+    return JSON.stringify(newUser.data)
+   } catch (err) {
+       console.log(err);
+   }
 }

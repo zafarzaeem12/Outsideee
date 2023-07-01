@@ -1,26 +1,44 @@
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet ,Image } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet ,Image ,Platform } from 'react-native';
 import AuthBackground from '../../../components/AuthBackground';
 // import CustomBackground from '../../../components/AppContainer/CustomBackground';
 import { ProfileTextInput } from '../../../components/ProfileTextInput';
 import Icons from '../../../assets/Icons';
-
+import { useDispatch , useSelector } from 'react-redux'
 import CustomButton from '../../../components/CustomButton';
 import { theme } from '../../../assets/fonts/fonts';
-
+import {  Add_New_User } from '../../../redux/thunk/UserReducers'
+import DeviceInfo from 'react-native-device-info';
+import axios from 'axios';
 const SignupScreen = ({ navigation }) => {
+  const dispatch = useDispatch()
+  
+  useSelector((state) => console.log('check this methods' , state))
+  const [username , setusername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [confirm_password, setconfirmpassword] = useState('');
   const [visible, setVisible] = useState(false);
 
   const handleForgetPassword = () => {
     navigation.navigate("ForgetPassword");
   };
 
-  const handleSignup = () => {
-    navigation.navigate("SigninScreen");
-  };
+  const handleSignup = async () => {
+    const device_token = DeviceInfo.getDeviceId();
+  
+    var data = JSON.stringify({
+      "name": username,
+      "email": email,
+      "password": password,
+      "confirm_password": confirm_password,
+      "device_token": device_token,
+      "device_type": Platform.OS
+    });
 
+    dispatch(Add_New_User(data));   
+  };
+  
   const UserSelector = () => {
     navigation.navigate("UserSelector");
   };
@@ -40,17 +58,16 @@ const SignupScreen = ({ navigation }) => {
           <ProfileTextInput
               placeholder='Andrew smith'
               heading="User name"
-              // value={password}
-              // onChangeText={text => setPassword(text)}
-              icon={Icons.password}
-              secureTextEntry={!visible}
+              value={username}
+              onChangeText={text => setusername(text)}
+              icon={Icons.user}
               label={'Password'}
             />
             <ProfileTextInput
               placeholder='johnsmith@gmail.com'
               heading="Email Address"
-              // value={email}
-              // onChangeText={text => setEmail(text)}
+              value={email}
+              onChangeText={text => setEmail(text)}
               label={'Email'}
               icon={Icons.email}
             />
@@ -58,8 +75,8 @@ const SignupScreen = ({ navigation }) => {
             <ProfileTextInput
               placeholder='•••••••••••••••'
               heading="Password"
-              // value={password}
-              // onChangeText={text => setPassword(text)}
+              value={password}
+              onChangeText={text => setPassword(text)}
               icon={Icons.password}
               secureTextEntry={!visible}
               label={'Password'}
@@ -67,8 +84,8 @@ const SignupScreen = ({ navigation }) => {
              <ProfileTextInput
               placeholder='•••••••••••••••'
               heading="Confirm Password"
-              // value={password}
-              // onChangeText={text => setPassword(text)}
+              value={confirm_password}
+              onChangeText={text => setconfirmpassword(text)}
               icon={Icons.password}
               secureTextEntry={!visible}
               label={'Confirm Password'}
@@ -77,14 +94,14 @@ const SignupScreen = ({ navigation }) => {
             <CustomButton
               buttonStyle={styles.btn}
               title="Signup"
-              onPress={UserSelector}
+              onPress={() => handleSignup()}
             />
           </View>
         </View>
         <View style={styles.btm}>
           <Text style={styles.btmtxt}>
             Already have an account?{' '}
-            <Text onPress={handleSignup} style={styles.heading}>
+            <Text onPress={UserSelector} style={styles.heading}>
               Signup
             </Text>
           </Text>

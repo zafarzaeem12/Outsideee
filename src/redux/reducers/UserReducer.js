@@ -1,20 +1,28 @@
 import { createSlice } from '@reduxjs/toolkit'
+import { Add_New_User } from '../thunk/UserReducers'
 
-
-export const UserReducer = createSlice({
+const UserSlice = createSlice({
     name:'User',
-    initialState: [],
-    reducers:{
-        // AddMovies:(state,actions)  => {
-        //     state.push( actions.payload)
-        // },
-        // DeleteMovie:(state,actions) => {
-        //     const index = state.indexOf(actions.payload);
-        //     state.splice(index, 1);
-        // }
+    initialState: {
+        isLoading: false,
+        data : [],
+        error : null
+    },
+    extraReducers(builder){
+        builder.addCase(Add_New_User.pending , (state,action) => {
+            state.isLoading = true;
+         })
+        builder.addCase(Add_New_User.fulfilled , (state,action) => {
+            state.isLoading = false;
+            console.log( 'object' , state.data.push(action.payload))
+            state.data.push(action.payload)
+         })
+        builder.addCase(Add_New_User.rejected , (state,action) => {
+            state.isLoading = false,
+            state.error = action.error
+         })
     }
 })
 
-export const { AddMovies ,DeleteMovie } = UserReducer.actions;
 
-export default UserReducer.reducer
+export const UserReducers =  UserSlice.reducer;
